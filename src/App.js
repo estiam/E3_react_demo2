@@ -1,24 +1,22 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FonctionDeclarativeComponent from './Components/FonctionDeclarativeComponent';
+import FonctionComponent from './Components/FonctionComponent';
+import ClassComponent from './Components/ClassComponent';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <FonctionDeclarativeComponent
+        color='#0000FF'
+        name='Fonction Declarative Component'
+      />
+      <FonctionComponent
+        color='#FF0000'
+        name='Fonction Component'
+      />
+      <ClassComponent />
     </div>
   );
 }
